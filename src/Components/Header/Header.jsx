@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import human from '../Images/human.png'
 import shop from '../Images/shop.png'
+import './Header.css'
 
 const Header = () => {
   return (
@@ -18,8 +19,8 @@ const Header = () => {
                         <Link to="/blog">Blog</Link>
                     </li>
                     <li className='header__item'>
-                        <img className='header__img' src="" alt="surat" />
-                        <img className='header__img' src="" alt="surat" />
+                        <img className='header__img' src={human} alt="surat" />
+                        <img className='header__img' src={shop} alt="surat" />
                     </li>
                 </ul>
             </div>
