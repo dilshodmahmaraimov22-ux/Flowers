@@ -5,6 +5,7 @@ import hero3 from '../../Images/hero3.jpg'
 import hero4 from '../../Images/hero4.jpg'
 import hero5 from '../../Images/hero5.jpg'
 import hero6 from '../../Images/hero6.jpg'
+import './Hero.css'
 
 const Hero = () => {
   return (
@@ -18,7 +19,7 @@ const Hero = () => {
                         <p className='hero__text'>Browse between hounders of flowers</p>
                         <button className='hero__btn'>Browse</button>
                     </li>
-                    <li className='hero__item'>
+                    <li className='hero__item2'>
                         <img className='hero__img' src={hero1} alt="flower" />
                         <img className='hero__img' src={hero2} alt="flower" />
                         <img className='hero__img' src={hero3} alt="flower" />
