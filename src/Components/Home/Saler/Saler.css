@@ -1,18 +1,15 @@
-/* Konteyner o'lchami */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/* Asosiy sektsiya */
 .saler {
-  background-color: #f5f5f7; /* Rasmdagi och kulrang fon */
+  background-color: #f5f5f7;
   padding: 60px 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
-/* --- SARLAVHA VA IKKI TOMONIDAGI CHIZIQLAR --- */
 .saler__title-wrapper {
   display: flex;
   align-items: center;
@@ -28,16 +25,14 @@
   white-space: nowrap;
 }
 
-/* Sarlavhaning o'ng va chap yonidagi chiziqlar */
 .saler__title-wrapper::before,
 .saler__title-wrapper::after {
   content: "";
   height: 1px;
-  width: 180px; /* Chiziq uzunligi */
+  width: 180px;
   background-color: #d1d1d6;
 }
 
-/* --- KARTALAR TARTIBI (GRID / FLEX) --- */
 .saler__list {
   display: flex;
   justify-content: space-between;
@@ -47,7 +42,6 @@
   padding: 0;
 }
 
-/* Har bir karta stili */
 .saler__item {
   background-color: #ffffff;
   border-radius: 12px;
@@ -55,7 +49,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03); /* Yengil soya */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -64,7 +58,6 @@
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
-/* Karta rasmi */
 .saler__img {
   width: 100%;
   height: 200px;
@@ -73,7 +66,6 @@
   margin-bottom: 16px;
 }
 
-/* Nomi */
 .saler__name {
   font-size: 16px;
   font-weight: 500;
@@ -81,27 +73,24 @@
   margin: 0 0 16px 0;
 }
 
-/* Narx va Tugma joylashgan pastki qism */
 .saler__bottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: auto; /* Pastga yopishtirib qo'yadi */
+  margin-top: auto;
 }
 
-/* Narx */
 .saler__price {
   font-size: 15px;
   color: #8e8e93;
   font-weight: 400;
 }
 
-/* Add to cart tugmasi */
 .saler__link {
   display: flex;
   align-items: center;
   gap: 6px;
-  color: #ff9166; /* Sabzirang matn */
+  color: #ff9166;
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
@@ -112,12 +101,10 @@
   opacity: 0.8;
 }
 
-/* Ikonka shakli */
 .saler__link svg {
   font-size: 14px;
 }
 
-/* Mobil moslashuvchanlik */
 @media (max-width: 900px) {
   .saler__list {
     flex-wrap: wrap;
