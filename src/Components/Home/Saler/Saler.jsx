@@ -17,27 +17,27 @@ const Saler = () => {
                 <ul className='saler__list'>
                     <li className='saler__item'>
                         <img className='saler__img' src={card1} alt="flower" />
-                        <h1 className='saler__name'></h1>
-                        <h2 className='saler__price'></h2>
-                        <Link className='saler__link'><FaShoppingCart/></Link>
+                        <h1 className='saler__name'>Daisy</h1>
+                        <h2 className='saler__price'>5$</h2>
+                        <Link className='saler__link'><FaShoppingCart/>Add to cart</Link>
                     </li>
                     <li className='saler__item'>
                         <img className='saler__img' src={card2} alt="flower" />
-                        <h1 className='saler__name'></h1>
-                        <h2 className='saler__price'></h2>
-                        <Link className='saler__link'><FaShoppingCart/></Link>
+                        <h1 className='saler__name'>Sun flower</h1>
+                        <h2 className='saler__price'>5$</h2>
+                        <Link className='saler__link'><FaShoppingCart/>Add to cart</Link>
                     </li>
                     <li className='saler__item'>
                         <img className='saler__img' src={card3} alt="flower" />
-                        <h1 className='saler__name'></h1>
-                        <h2 className='saler__price'></h2>
-                        <Link className='saler__link'><FaShoppingCart/></Link>
+                        <h1 className='saler__name'>White Rose</h1>
+                        <h2 className='saler__price'>5$</h2>
+                        <Link className='saler__link'><FaShoppingCart/>Add to cart</Link>
                     </li>
                     <li className='saler__item'>
                         <img className='saler__img' src={card4} alt="flower" />
-                        <h1 className='saler__name'></h1>
-                        <h2 className='saler__price'></h2>
-                        <Link className='saler__link'><FaShoppingCart/></Link>
+                        <h1 className='saler__name'>Periwinkle</h1>
+                        <h2 className='saler__price'>5$</h2>
+                        <Link className='saler__link'><FaShoppingCart/>Add to cart</Link>
                     </li>
                 </ul>
             </div>
