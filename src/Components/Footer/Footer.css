@@ -1,13 +1,11 @@
-/* Основной контейнер */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/* Фон подвала */
 .footer {
-  background-color: #4a4a4a; /* Темно-серый фон как на фото */
+  background-color: #4a4a4a;
   color: #e0e0e0;
   padding: 60px 0;
   font-family: system-ui, -apple-system, sans-serif;
@@ -23,18 +21,15 @@
   gap: 30px;
 }
 
-/* Элемент колонки */
 .footer-item {
   display: flex;
   flex-direction: column;
 }
 
-/* Первая колонка делается шире */
 .footer-item--about {
   max-width: 360px;
 }
 
-/* Логотип Flower Shop */
 .footer__title {
   font-size: 28px;
   font-weight: 700;
@@ -43,7 +38,7 @@
 }
 
 .footer__title .highlight {
-  color: #e27d49; /* Оранжевый цвет */
+  color: #e27d49;
 }
 
 .footer__desc {
@@ -53,7 +48,6 @@
   margin: 0;
 }
 
-/* Заголовки "Links" и "Contact" */
 .footer__subtitle {
   font-size: 20px;
   font-weight: 500;
@@ -61,29 +55,27 @@
   margin: 0 0 20px 0;
 }
 
-/* ГРУППА ССЫЛОК: Вертикальное расположение (в столбик) */
 .footer__links-group {
   display: flex;
-  flex-direction: column; /* Размещает ссылки строго в столбик */
-  gap: 12px;             /* Расстояние между ссылками */
+  flex-direction: column;
+  gap: 12px;
 }
 
-/* Обычные ссылки (группы 2 и 3) */
 .footer__link {
-  display: block;        /* Каждый link занимает отдельную строку */
+  display: block;
   color: #cccccc;
   text-decoration: none;
   font-size: 15px;
   transition: color 0.2s ease;
+  margin-bottom: 10px;
 }
 
 .footer__link:hover {
   color: #e27d49;
 }
 
-/* Ссылки с иконками в разделе Contact (4-я группа) */
 .footer__link--contact {
-  display: flex;         /* Иконка и текст в одну линию */
+  display: flex;
   align-items: flex-start;
   gap: 12px;
   line-height: 1.4;
