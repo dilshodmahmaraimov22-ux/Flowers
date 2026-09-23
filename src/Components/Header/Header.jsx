@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import human from '../Images/human.png'
+import shop from '../Images/shop.png'
 
 const Header = () => {
   return (
@@ -15,7 +17,10 @@ const Header = () => {
                         <Link to="/shop">Shop</Link>
                         <Link to="/blog">Blog</Link>
                     </li>
-                    <li className='header__item'></li>
+                    <li className='header__item'>
+                        <img className='header__img' src="" alt="surat" />
+                        <img className='header__img' src="" alt="surat" />
+                    </li>
                 </ul>
             </div>
         </div>
