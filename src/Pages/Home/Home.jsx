@@ -1,12 +1,12 @@
 import React from 'react'
 import Hero from '../../Components/Home/Hero/Hero'
-import Card from '../../Components/Home/Card/Card'
+import Saler from '../../Components/Home/Saler/Saler'
 
 const Home = () => {
   return (
     <>
     <Hero/>
-    <Card/>
+    <Saler/>
     </>
   )
 }
