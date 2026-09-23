@@ -87,3 +87,42 @@
   margin-top: 2px;
   flex-shrink: 0;
 }
+
+@media (max-width: 992px) {
+  .footer__list {
+    flex-wrap: wrap;
+    gap: 40px 20px;
+  }
+
+  .footer-item {
+    flex: 1 1 40%;
+  }
+
+  .footer-item--about {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    padding: 40px 0;
+  }
+
+  .footer__list {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-item {
+    width: 100%;
+  }
+
+  .footer__subtitle {
+    margin-bottom: 12px;
+  }
+
+  .footer__link {
+    margin-bottom: 6px;
+  }
+}
