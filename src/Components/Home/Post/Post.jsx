@@ -15,31 +15,43 @@ const Post = () => {
                 <h1 className='post__title'>Latest posts</h1>
                 <ul className='post__list'>
                     <li className='post__item'>
-                        <img className='post__avatar' src={avatar} alt="avatar" />
-                        <h2 className='post__date'>2022/22/8</h2>
+                        <li className='post__item2'>
+                            <img className='post__avatar' src={avatar} alt="avatar" />
+                            <h2 className='post__date'>2022/22/8</h2>
+                        </li>
                         <img className='post__img' src={post1} alt="rasm" />
                         <h1 className='post__title'Best flowers for inside home></h1>
                         <p className='post__text'>All the flowers are best for your lovly house just get the one you love the most 😊</p>
-                        <img className='post__like' src={like} alt="like" />
-                        <h1 className='post__title2'>Read</h1>
+                        <li className='post__item3'>
+                            <img className='post__like' src={like} alt="like" />
+                            <h1 className='post__title2'>Read</h1>
+                        </li>
                     </li>
                     <li className='post__item'>
-                        <img className='post__avatar' src={avatar} alt="avatar" />
-                        <h2 className='post__date'>2022/22/8</h2>
+                        <li className='post__item2'>
+                            <img className='post__avatar' src={avatar} alt="avatar" />
+                            <h2 className='post__date'>2022/22/8</h2>
+                        </li>
                         <img className='post__img' src={post2} alt="rasm" />
                         <h1 className='post__title'>Best flowers for inside home</h1>
                         <p className='post__text'>All the flowers are best for your lovly house just get tthe one you love the most </p>
-                        <img className='post__like' src={like} alt="like" />
-                        <h1 className='post__title2'>Read</h1>
+                        <li className='post__item3'>
+                            <img className='post__like' src={like} alt="like" />
+                            <h1 className='post__title2'>Read</h1>
+                        </li>
                     </li>
                     <li className='post__item'>
-                        <img className='post__avatar' src={avatar} alt="avatar" />
-                        <h2 className='post__date'>2022/22/8</h2>
+                        <li className='post__item2'>
+                            <img className='post__avatar' src={avatar} alt="avatar" />
+                            <h2 className='post__date'>2022/22/8</h2>
+                        </li>
                         <img className='post__img' src={post3} alt="rasm" />
                         <h1 className='post__title'>Best flowers for inside home</h1>
                         <p className='post__text'>All the flowers are best for your lovly house just get tthe one you love the most </p>
-                        <img className='post__like' src={like} alt="like" />
-                        <h1 className='post__title2'>Read</h1>
+                        <li className='post__item3'>
+                            <img className='post__like' src={like} alt="like" />
+                            <h1 className='post__title2'>Read</h1>
+                        </li>
                     </li>
                 </ul>
             </div>
