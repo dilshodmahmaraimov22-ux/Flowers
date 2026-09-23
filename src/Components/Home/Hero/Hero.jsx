@@ -1,5 +1,10 @@
 import React from 'react'
-import hero1 from '../Images/hero1.png'
+import hero1 from '../../Images/hero1.jpg'
+import hero2 from '../../Images/hero2.jpg'
+import hero3 from '../../Images/hero3.jpg'
+import hero4 from '../../Images/hero4.jpg'
+import hero5 from '../../Images/hero5.jpg'
+import hero6 from '../../Images/hero6.jpg'
 
 const Hero = () => {
   return (
@@ -14,7 +19,12 @@ const Hero = () => {
                         <button className='hero__btn'>Browse</button>
                     </li>
                     <li className='hero__item'>
-                        <img src={hero1} alt="" />
+                        <img className='hero__img' src={hero1} alt="flower" />
+                        <img className='hero__img' src={hero2} alt="flower" />
+                        <img className='hero__img' src={hero3} alt="flower" />
+                        <img className='hero__img' src={hero4} alt="flower" />
+                        <img className='hero__img' src={hero5} alt="flower" />
+                        <img className='hero__img' src={hero6} alt="flower" />
                     </li>
                 </ul>
             </div>
