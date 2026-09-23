@@ -4,13 +4,14 @@ import About from './Pages/About/About'
 import Shop from './Pages/Shop/Shop'
 import Blog from './Pages/Blog/Blog'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Layout from './Components/Layout/Layout'
 
 const App = () => {
   return (
     <>
     <BrowserRouter>
                   <Routes>
-                         <Route>
+                         <Route element={<Layout/>}>
                                <Route path='/' element={<Home/>}/>
                                <Route path='/about' element={<About/>}/>
                                <Route path='/shop' element={<Shop/>}/>
