@@ -13,7 +13,7 @@ const Saler = () => {
     <div className="saler">
         <div className="container">
             <div className="saler__container">
-                <h1 className='saler__contaier'>Best selers</h1>
+                <h1 className='saler__title'>Best selers</h1>
                 <ul className='saler__list'>
                     <li className='saler__item'>
                         <img className='saler__img' src={card1} alt="flower" />

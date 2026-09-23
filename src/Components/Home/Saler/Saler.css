@@ -10,27 +10,24 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
-.saler__title-wrapper {
+.saler__title {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 40px;
-}
-
-.saler__title {
   font-size: 24px;
   font-weight: 500;
   color: #111111;
-  margin: 0 20px;
-  white-space: nowrap;
+  margin: 0 0 40px 0;
+  text-align: center;
 }
 
-.saler__title-wrapper::before,
-.saler__title-wrapper::after {
+.saler__title::before,
+.saler__title::after {
   content: "";
   height: 1px;
   width: 180px;
   background-color: #d1d1d6;
+  margin: 0 20px;
 }
 
 .saler__list {
@@ -44,18 +41,13 @@
 
 .saler__item {
   background-color: #ffffff;
-  border-radius: 12px;
+  border-radius: 8px;
   padding: 16px;
   flex: 1;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.saler__item:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+  position: relative;
 }
 
 .saler__img {
@@ -73,17 +65,11 @@
   margin: 0 0 16px 0;
 }
 
-.saler__bottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: auto;
-}
-
 .saler__price {
-  font-size: 15px;
+  font-size: 14px;
   color: #8e8e93;
   font-weight: 400;
+  margin: 0;
 }
 
 .saler__link {
@@ -94,34 +80,27 @@
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
-  transition: opacity 0.2s ease;
+  margin-left: auto;
 }
 
-.saler__link:hover {
-  opacity: 0.8;
+.saler__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 
-.saler__link svg {
-  font-size: 14px;
+.saler__img, 
+.saler__name {
+  grid-column: span 2;
 }
 
 @media (max-width: 900px) {
   .saler__list {
-    flex-wrap: wrap;
-  }
-  
-  .saler__item {
-    min-width: 45%;
-  }
-}
-
-@media (max-width: 550px) {
-  .saler__item {
-    min-width: 100%;
+    flex-direction: column;
   }
 
-  .saler__title-wrapper::before,
-  .saler__title-wrapper::after {
+  .saler__title::before,
+  .saler__title::after {
     width: 60px;
   }
 }
