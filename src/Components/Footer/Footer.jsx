@@ -15,12 +15,12 @@ const Footer = () => {
                     <li className='footer-item'>
                         <h1 className='footer__title'>Flower Shop</h1>
                         <p>
-                            Some random stuff about flower shop and 
-                            some more info cuz this box had to get fill 
-                            Some random stuff about flower shop and 
-                            some more info cuz this box had to get fill 
-                            Some random stuff about flower shop and 
-                            some more info cuz this box had to get fill
+                            Some random stuff about flower shop and <br />
+                            some more info cuz this box had to get fill <br />
+                            Some random stuff about flower shop and <br />
+                            some more info cuz this box had to get fill <br />
+                            Some random stuff about flower shop and <br />
+                            some more info cuz this box had to get fill <br />
                         </p>
                     </li>
                     <li className='footer-item'>
