@@ -10,7 +10,6 @@ const Footer = () => {
         <div className="footer__container">
           <ul className='footer__list'>
             
-            {/* 1-Ustun: Shop haqida */}
             <li className='footer-item footer-item--about'>
               <h1 className='footer__title'>
                 Flower <span className="highlight">Shop</span>
@@ -21,7 +20,6 @@ const Footer = () => {
               </p>
             </li>
 
-            {/* 2-Ustun: Links */}
             <li className='footer-item'>
               <h2 className='footer__subtitle'>Links</h2>
               <div className="footer__links-group">
@@ -32,7 +30,6 @@ const Footer = () => {
               </div>
             </li>
 
-            {/* 3-Ustun: Links */}
             <li className='footer-item'>
               <h2 className='footer__subtitle'>Links</h2>
               <div className="footer__links-group">
@@ -43,7 +40,6 @@ const Footer = () => {
               </div>
             </li>
 
-            {/* 4-Ustun: Contact */}
             <li className='footer-item'>
               <h2 className='footer__subtitle'>Contact</h2>
               <div className="footer__links-group">
