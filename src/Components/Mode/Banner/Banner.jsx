@@ -1,4 +1,10 @@
 import React from 'react'
+import { FaLightbulb } from 'react-icons/fa'
+import { FaBolt } from 'react-icons/fa6'
+import { FaHammer } from 'react-icons/fa'
+import { FaBox } from 'react-icons/fa'
+import { FaScrewdriverWrench } from 'react-icons/fa6'
+import { FaKey } from 'react-icons/fa'
 
 const Banner = () => {
   return (
@@ -8,32 +14,32 @@ const Banner = () => {
             <div className="banner__container">
                 <ul className='banner__list'>
                     <li className='banner__item'>
-                        <img className='banner__img' src="" alt="surat" />
+                        <FaLightbulb/>
                         <h1 className='banner__title'></h1>
                         <p className='banner__text'></p>
                     </li>
                     <li className='banner__item'>
-                        <img className='banner__img' src="" alt="surat" />
+                        <FaBolt/>
                         <h1 className='banner__title'></h1>
                         <p className='banner__text'></p>
                     </li>
                     <li className='banner__item'>
-                        <img className='banner__img' src="" alt="surat" />
+                        <FaHammer/>
                         <h1 className='banner__title'></h1>
                         <p className='banner__text'></p>
                     </li>
                     <li className='banner__item'>
-                        <img className='banner__img' src="" alt="surat" />
+                        <FaBox/>
                         <h1 className='banner__title'></h1>
                         <p className='banner__text'></p>
                     </li>
                     <li className='banner__item'>
-                        <img className='banner__img' src="" alt="surat" />
+                        <FaScrewdriverWrench/>
                         <h1 className='banner__title'></h1>
                         <p className='banner__text'></p>
                     </li>
                     <li className='banner__item'>
-                        <img className='banner__img' src="" alt="surat" />
+                        <FaKey/>
                         <h1 className='banner__title'></h1>
                         <p className='banner__text'></p>
                     </li>
