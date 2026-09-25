@@ -6,10 +6,12 @@ import { FaHome } from 'react-icons/fa'
 
 const Login = () => {
     const [text, setText] = useState("");
-    const [password, setPassword] = useState();
+    const [password, setPassword] = useState("");
 
-    const handleSubmit =()=>{
-        e.preventDefault()
+    const handleSubmit =(e)=>{
+        e.preventDefault();
+        console.log("text=", text, "password=", password);
+        
     }
 
   return (
@@ -22,7 +24,7 @@ const Login = () => {
                         <h1 className='login__title'>Login</h1>
                         <p className='login__text'>Login and have more fun</p>
                         <Link to="/" className='login__link'><FaHome/> Back to home</Link>
-                        <form>
+                        <form onSubmit={handleSubmit}>
                             <input className='login__username' 
                             type="text"
                             placeholder='loginni kiriting'
@@ -32,7 +34,7 @@ const Login = () => {
                             <input className='login__password' 
                             type="password"
                             value={password}
-                            onChange={()=>setPassword(e.target.value)}
+                            onChange={(e)=>setPassword(e.target.value)}
                              />
                             <input type="checkbox" />
                             <button type='submit' className='login__btn'>Login</button>
