@@ -5,6 +5,7 @@ import { FaHammer } from 'react-icons/fa'
 import { FaBox } from 'react-icons/fa'
 import { FaScrewdriverWrench } from 'react-icons/fa6'
 import { FaKey } from 'react-icons/fa'
+import './Banner.css'
 
 const Banner = () => {
   return (

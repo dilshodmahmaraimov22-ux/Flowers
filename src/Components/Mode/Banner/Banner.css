@@ -1,0 +1,95 @@
+/* Konteyner */
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Asosiy Sektsiya */
+.banner {
+  background-color: #ffffff;
+  padding: 80px 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* --- KARTALAR TARTIBI (3 Ustunli Grid) --- */
+.banner__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 ta teng ustun */
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- KARTA STILI --- */
+.banner__item {
+  background-color: #f6f6f7; /* Rasmdagi och kulrang karta foni */
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.banner__item:hover {
+  background-color: #f1f1f2;
+}
+
+/* --- IKONKA UCHUN OCH KULRANG KVADRAT FON --- */
+.banner__icon-box {
+  width: 48px;
+  height: 48px;
+  background-color: #ebebef; /* Ikonka orqasidagi kvadrat rangi */
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+/* Ikonka rangi (Tosh/Oltin rangiga mos) */
+.banner__icon {
+  font-size: 20px;
+  color: #eab308; /* Rasmdagidek sarg'ish-oltin rang */
+}
+
+/* --- SARLAVHA VA MATN --- */
+.banner__title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #213547; /* To'q ko'kimtir tusdagi yozuv */
+  margin: 0 0 8px 0;
+  line-height: 1.4;
+}
+
+.banner__text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #666666; /* Ochroq matn rangi */
+  margin: 0;
+}
+
+/* ==========================================
+   RESPONSIVE (MOBIL VA PLANSHETLAR UCHUN)
+   ========================================== */
+
+/* Planshetlar uchun (2 ta ustun) */
+@media (max-width: 900px) {
+  .banner__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Telefonlar uchun (1 ta ustun) */
+@media (max-width: 600px) {
+  .banner {
+    padding: 40px 0;
+  }
+  
+  .banner__list {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
