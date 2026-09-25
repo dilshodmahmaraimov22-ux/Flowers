@@ -49,6 +49,12 @@ const Cart = () => {
                         <h1 className='cart__total'>Total 10$</h1>
                     </li>
                 </ul>
+                <ul className='cart__list2'>
+                    <li className='cart__item4'>
+                        <h1 className='cart__title2'>Subtotal for 3 items: 62$</h1>
+                        <button className='cart__check'>Checkout</button>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
