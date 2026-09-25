@@ -7,10 +7,6 @@ import { FaTrash } from 'react-icons/fa'
 const Cart = () => {
     const [count, setCount] = useState(0);
 
-    const handleDelete = (index)=>{
-        const del = count.filter((a, i)=> i !== index);
-        setCount(del);
-    }
     
   return (
     <>
@@ -45,11 +41,11 @@ const Cart = () => {
                         </li>
                     </li>
                     <li className='cart__items'>
-                        <button onClick={()=>handleDelete(index)} className='cart__trash'><FaTrash/></button>
+                        <button className='cart__trash'><FaTrash/></button>
                         <h1 className='cart__total'>Total 10$</h1>
                     </li>
                 </ul>
-                <ul className='cart__list2'>
+                <ul className='cart__list'>
                     <li className='cart__item4'>
                         <h1 className='cart__title2'>Subtotal for 3 items: 62$</h1>
                         <button className='cart__check'>Checkout</button>
