@@ -1,9 +1,15 @@
 import React, { useState } from 'react'
 import './Cart.css'
 import cart1 from '../../Images/cart1.jpg'
+import { FaTrash } from 'react-icons/fa'
 
 const Cart = () => {
     const [count, setCount] = useState(0);
+
+    const handleDelete = (index)=>{
+        const del = count.filter((a, i)=> i !== index);
+        setCount(del);
+    }
     
   return (
     <>
@@ -21,6 +27,10 @@ const Cart = () => {
                             <h1 className='cart__count'>{count}</h1>
                             <button onClick={()=>setCount(count - 1)} className='cart__btn'>-</button>
                         </li>
+                    </li>
+                    <li className='cart__item'>
+                        <button onClick={()=>handleDelete(index)} className='cart__trash'><FaTrash/></button>
+                        <h1 className='cart__total'>Total 10$</h1>
                     </li>
                 </ul>
             </div>
