@@ -1,10 +1,15 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import human from '../Images/human.png'
 import shop from '../Images/shop.png'
 import './Header.css'
 
 const Header = () => {
+    const navigate = useNavigate();
+
+    const handleLogout = ()=>{
+        navigate("/")
+    }
   return (
     <>
     <div className="header">
@@ -21,6 +26,7 @@ const Header = () => {
                     <li className='header__item'>
                         <img className='header__img' src={human} alt="surat" />
                         <img className='header__img' src={shop} alt="surat" />
+                        <button onClick={handleLogout} className='header__btnn'>Logout</button>
                     </li>
                 </ul>
             </div>

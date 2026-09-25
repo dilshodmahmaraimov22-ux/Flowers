@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Login.css'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { FaHome } from 'react-icons/fa'
 
 
@@ -8,9 +8,26 @@ const Login = () => {
     const [text, setText] = useState("");
     const [password, setPassword] = useState("");
 
+    const navigate = useNavigate("");
+
     const handleSubmit =(e)=>{
         e.preventDefault();
-        console.log("text=", text, "password=", password);
+        
+        const matn = "absd";
+        const parol = "1234"
+
+        const intermatn = text.trim().toLocaleLowerCase();
+        const interparol = password.trim().toLocaleLowerCase();
+
+        if(intermatn === matn && interparol === parol){
+            alert("Ro'yxatdan o'tdingiz")
+
+            navigate("/home")
+            setText("");
+            setPassword("");
+        }else{
+            alert("xato")
+        }
         
     }
 
