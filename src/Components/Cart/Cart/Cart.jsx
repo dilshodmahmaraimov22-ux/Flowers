@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Cart.css'
 import cart1 from '../../Images/cart1.jpg'
+import cart2 from '../../Images/cart2.jpg'
 import { FaTrash } from 'react-icons/fa'
 
 const Cart = () => {
@@ -29,6 +30,21 @@ const Cart = () => {
                         </li>
                     </li>
                     <li className='cart__item'>
+                        <button onClick={()=>handleDelete(index)} className='cart__trash'><FaTrash/></button>
+                        <h1 className='cart__total'>Total 10$</h1>
+                    </li>
+
+                    <li className='cart__items'>
+                        <img className='cart__img' src={cart2} alt="" />
+                        <h1 className='cart__name'>White flower</h1>
+                        <p className='cart__text'>unit pric 10$</p>
+                        <li className='cart__item3'>
+                            <button onClick={()=>setCount(count + 1)} className='cart__btn'>+</button>
+                            <h1 className='cart__count'>{count}</h1>
+                            <button onClick={()=>setCount(count - 1)} className='cart__btn'>-</button>
+                        </li>
+                    </li>
+                    <li className='cart__items'>
                         <button onClick={()=>handleDelete(index)} className='cart__trash'><FaTrash/></button>
                         <h1 className='cart__total'>Total 10$</h1>
                     </li>
