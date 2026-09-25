@@ -6,6 +6,7 @@ import { FaTrash } from 'react-icons/fa'
 
 const Cart = () => {
     const [count, setCount] = useState(0);
+    const [sount, setSount] = useState(0);
 
     
   return (
@@ -17,28 +18,28 @@ const Cart = () => {
                 <ul className='cart__list'>
                     <li className='cart__item'>
                         <img className='cart__img' src={cart1} alt="" />
-                        <h1 className='cart__name'>Sun flower</h1>
-                        <p className='cart__text'>unit pric 10$</p>
-                        <li className='cart__item2'>
-                            <button onClick={()=>setCount(count + 1)} className='cart__btn'>+</button>
-                            <h1 className='cart__count'>{count}</h1>
-                            <button onClick={()=>setCount(count - 1)} className='cart__btn'>-</button>
-                        </li>
                     </li>
                     <li className='cart__item'>
-                        <button onClick={()=>handleDelete(index)} className='cart__trash'><FaTrash/></button>
+                        <h1 className='cart__name'>Sun flower</h1>
+                        <p className='cart__text'>unit pric 10$</p>
+                        <button onClick={()=>setCount(count + 1)} className='cart__btn'>+</button>
+                        <h1 className='cart__count'>{count}</h1>
+                        <button onClick={()=>setCount(count - 1)} className='cart__btn'>-</button>
+                    </li>
+                    <li className='cart__item'>
+                        <button className='cart__trash'><FaTrash/></button>
                         <h1 className='cart__total'>Total 10$</h1>
                     </li>
 
                     <li className='cart__items'>
                         <img className='cart__img' src={cart2} alt="" />
+                    </li>
+                    <li className='cart__items'>
                         <h1 className='cart__name'>White flower</h1>
                         <p className='cart__text'>unit pric 10$</p>
-                        <li className='cart__item3'>
-                            <button onClick={()=>setCount(count + 1)} className='cart__btn'>+</button>
-                            <h1 className='cart__count'>{count}</h1>
-                            <button onClick={()=>setCount(count - 1)} className='cart__btn'>-</button>
-                        </li>
+                        <button onClick={()=>setSount(sount + 1)} className='cart__btn'>+</button>
+                        <h1 className='cart__count'>{sount}</h1>
+                        <button onClick={()=>setSount(sount - 1)} className='cart__btn'>-</button>
                     </li>
                     <li className='cart__items'>
                         <button className='cart__trash'><FaTrash/></button>
@@ -46,7 +47,7 @@ const Cart = () => {
                     </li>
                 </ul>
                 <ul className='cart__list'>
-                    <li className='cart__item4'>
+                    <li className='cart__item2'>
                         <h1 className='cart__title2'>Subtotal for 3 items: 62$</h1>
                         <button className='cart__check'>Checkout</button>
                     </li>
