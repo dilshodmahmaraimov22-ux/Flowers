@@ -5,15 +5,15 @@ import shopp1 from '../Images/shopp1.jpg'
 
 const Shop2 = () => {
   return (
-    <div className="shop">
-      <div className="container">
-        <div className="shop__item">
-          <img className="shop__img" src={shopp1} alt="Sun flower" />
+    <div className="shop2">
+      <div className="shop2-container">
+        <div className="shop2-card">
+          <img className="shop2-image" src={shopp1} alt="Sun flower" />
 
-          <div className="shop__info">
-            <h2 className="shop__title">Sun flower</h2>
+          <div className="shop2-content">
+            <h2 className="shop2-heading">Sun flower</h2>
 
-            <p className="shop__text">
+            <p className="shop2-description">
               Make every day brighter with our abundant bouquet of fresh
               sunflowers. These radiant, long-lasting blooms bring that
               just-picked-from-the-meadow feeling to birthdays, get well
@@ -21,20 +21,20 @@ const Shop2 = () => {
               smile.
             </p>
 
-            <div className="shop__rating">
-              <FaStar className="shop__star" />
+            <div className="shop2-rating">
+              <FaStar className="shop2-star-icon" />
               <span>4.5/5</span>
             </div>
-            <p className="shop__reviews">(101 people opinion)</p>
+            <p className="shop2-reviews">(101 people opinion)</p>
 
-            <div className="shop__bottom">
-              <p className="shop__price">100$ / each</p>
+            <div className="shop2-footer">
+              <p className="shop2-price">100$ / each</p>
 
-              <div className="shop__actions">
-                <button className="shop__btn shop__btn--outline">
+              <div className="shop2-buttons">
+                <button className="shop2-btn shop2-btn-outline">
                   <FaHeart /> Add to favorite
                 </button>
-                <button className="shop__btn shop__btn--filled">
+                <button className="shop2-btn shop2-btn-filled">
                   <FaShoppingCart /> Add to cart
                 </button>
               </div>
