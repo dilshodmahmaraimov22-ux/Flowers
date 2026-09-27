@@ -16,22 +16,25 @@ const Shop1 = () => {
   return (
     <div className="shop">
       <div className="container">
-        <div className="shop__container">
-          <ul className='shop__list'>
-            {products.map((item, index) => (
-              <li className='shop__item' key={index}>
-                <img className='shop__img' src={item.img} alt={item.title} />
-                <h3 className='shop__title'>{item.title}</h3>
-                <div className='shop__flex'>
-                  <p className='shop__text'>{item.price}</p>
-                  <button className='shop__btn'>
-                    <span className='shop__btn-icon'>🛒</span> Add to cart
-                  </button>
-                </div>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <ul className="shop__list">
+          {products.map((item, index) => (
+            <li className="shop__item" key={index}>
+              <img
+                className="shop__img"
+                src={item.img}
+                alt={item.title}
+                style={{ width: '100%', height: 'auto', display: 'block' }}
+              />
+              <h3 className="shop__title">{item.title}</h3>
+              <div className="shop__flex">
+                <p className="shop__text">{item.price}</p>
+                <button className="shop__btn">
+                  <span className="shop__btn-icon">🛒</span> Add to cart
+                </button>
+              </div>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   )
