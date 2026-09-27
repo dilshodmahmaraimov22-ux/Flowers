@@ -3,51 +3,37 @@ import shop1 from '../../Images/shop1.jpg'
 import shop2 from '../../Images/shop2.jpg'
 import shop3 from '../../Images/shop3.jpg'
 import shop4 from '../../Images/shop4.jpg'
+import './Shop.css'
+
+const products = [
+  { img: shop1, title: 'Periwinkle', price: '5$' },
+  { img: shop2, title: 'Daisy', price: '5$' },
+  { img: shop3, title: 'Sun flower', price: '5$' },
+  { img: shop4, title: 'White Rose', price: '5$' },
+]
 
 const Shop1 = () => {
   return (
-    <>
     <div className="shop">
-        <div className="container">
-            <div className="shop__container">
-                <ul className='shop__list'>
-                    <li className='shop__item'>
-                        <img className='shop__img' src={shop1} alt="" />
-                        <h1 className='shop__title'>Periwinkle</h1>
-                        <li className='shop__flex'>
-                            <p className='shop__text'>5$</p>
-                            <button className='shop__btn'>Add to cart</button>
-                        </li>
-                    </li>
-                    <li className='shop__item'>
-                        <img className='shop__img' src={shop2} alt="" />
-                        <h1 className='shop__title'>Periwinkle</h1>
-                        <li className='shop__flex'>
-                            <p className='shop__text'>5$</p>
-                            <button className='shop__btn'>Add to cart</button>
-                        </li>
-                    </li>
-                    <li className='shop__item'>
-                        <img className='shop__img' src={shop3} alt="" />
-                        <h1 className='shop__title'>Periwinkle</h1>
-                        <li className='shop__flex'>
-                            <p className='shop__text'>5$</p>
-                            <button className='shop__btn'>Add to cart</button>
-                        </li>
-                    </li>
-                    <li className='shop__item'>
-                        <img className='shop__img' src={shop4} alt="" />
-                        <h1 className='shop__title'>Periwinkle</h1>
-                        <li className='shop__flex'>
-                            <p className='shop__text'>5$</p>
-                            <button className='shop__btn'>Add to cart</button>
-                        </li>
-                    </li>
-                </ul>
-            </div>
+      <div className="container">
+        <div className="shop__container">
+          <ul className='shop__list'>
+            {products.map((item, index) => (
+              <li className='shop__item' key={index}>
+                <img className='shop__img' src={item.img} alt={item.title} />
+                <h3 className='shop__title'>{item.title}</h3>
+                <div className='shop__flex'>
+                  <p className='shop__text'>{item.price}</p>
+                  <button className='shop__btn'>
+                    <span className='shop__btn-icon'>🛒</span> Add to cart
+                  </button>
+                </div>
+              </li>
+            ))}
+          </ul>
         </div>
+      </div>
     </div>
-    </>
   )
 }
 
