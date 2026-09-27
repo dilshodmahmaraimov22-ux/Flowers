@@ -31,16 +31,6 @@ const Footer = () => {
             </li>
 
             <li className='footer-item'>
-              <h2 className='footer__subtitle'>Links</h2>
-              <div className="footer__links-group">
-                <Link to="/" className='footer__link'>Home</Link>
-                <Link to="/about" className='footer__link'>About</Link>
-                <Link to="/shop" className='footer__link'>Shop</Link>
-                <Link to="/login" className='footer__link'>Login</Link>
-              </div>
-            </li>
-
-            <li className='footer-item'>
               <h2 className='footer__subtitle'>Contact</h2>
               <div className="footer__links-group">
                 <Link to="#" className='footer__link footer__link--contact'>
