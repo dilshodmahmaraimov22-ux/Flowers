@@ -1,12 +1,12 @@
 import React from 'react'
 import Cart from '../../Components/Cart/Cart/Cart'
-import Shop from '../../Components/Shop1/Shop1/Shop'
+import Shop1 from '../../Components/Shop1/Shop1/Shop1'
 
 const Shop = () => {
   return (
     <>
     <Cart/>
-    <Shop/>
+    <Shop1/>
     </>
   )
 }
